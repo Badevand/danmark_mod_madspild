@@ -11,7 +11,7 @@ public class HomeController {
     @GetMapping("/")
     public String forside()
     {
-        return "forside";
+        return "home/forside";
     }
 
 }
