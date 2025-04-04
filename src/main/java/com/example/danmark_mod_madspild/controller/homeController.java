@@ -9,9 +9,13 @@ public class homeController
     @GetMapping("/")
     public String forside()
     {
-        return "home/forside";
+        return "forside";
     }
 
-//hj
 
+    @GetMapping("privat/bliv-aktiv")
+    public String privatBlivAktiv()
+    {
+    return "privatBlivAktiv";
+    }
 }

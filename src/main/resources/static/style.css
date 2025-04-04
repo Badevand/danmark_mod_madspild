@@ -1,0 +1,28 @@
+/* Header-sektionen (øverst på siden) */
+header
+{
+    background-color: #1a1a1a; /* Mørk grå baggrund */
+    padding: 20px;             /* Luft rundt om indholdet */
+    text-align: center;        /* Centrerer teksten i headeren */
+}
+
+
+
+/* Sektioner (hver blok af indhold) */
+section
+{
+    padding: 20px;                         /* Giver luft rundt om indholdet i hver sektion */
+    border-bottom: 1px solid #333;         /* En tynd mørk grå streg under hver sektion */
+}
+
+
+
+/* Hele siden (body) */
+body
+{
+    background-color: black;          /* Sort baggrund på hele siden */
+    color: white;                     /* Hvid tekst som standard */
+    font-family: Arial, sans-serif;   /* Skrifttypen for al tekst */
+    margin: 0;                        /* Fjerner standard-margin omkring siden */
+    padding: 0;                       /* Fjerner standard-padding omkring siden */
+}
