@@ -1,28 +1,36 @@
-/* Header-sektionen (øverst på siden) */
-header
-{
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-}
-
-
-
-/* Sektioner (hver blok af indhold) */
-section
-{
-    padding: 20px;
-    border-bottom: 1px solid #333;
-}
-
-
-
-/* Hele siden (body) */
-body
-{
-    background-color: black;
-    color: white;                     /* Hvid tekst som standard */
+/* Hele siden*/
+body {
     font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
     margin: 0;
     padding: 0;
 }
+/* Det øverste på siden*/
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* styling til hver sektion */
+
+.section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/*footeren i bunden*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
