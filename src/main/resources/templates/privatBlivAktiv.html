@@ -9,20 +9,100 @@
 <header>
     <h1>Bliv Aktiv som Privatperson</h1>
 </header>
-
 <section>
     <h2>Bliv Frivillig</h2>
     <p>Vil du være med til at reducere madspild? Tilmeld dig som frivillig og gør en forskel</p>
     <button>Tilmeld dig</button>
 </section>
-
 <section>
     <h2>Bliv Sponsor</h2>
     <p>Du kan også støtte vores initiativer økonomisk.</p>
     <button>Kontakt os</button>
 </section>
+<!-- Donation via MobilePay sektion starter her -->
+<section>
+    <h2>Donation via MobilePay</h2>
+    <p>Som privatperson kan du støtte vores arbejde med at bekæmpe madspild gennem en donation.</p>
+
+    <div class="donation-options">
+        <h3>Vælg beløb</h3>
+        <div class="amount-buttons">
+            <button class="amount-btn">50 kr</button>
+            <button class="amount-btn">100 kr</button>
+            <button class="amount-btn">200 kr</button>
+            <button class="amount-btn">500 kr</button>
+        </div>
+
+        <div class="custom-amount">
+            <label for="custom-amount">Andet beløb:</label>
+            <input type="number" id="custom-amount" min="10" placeholder="Angiv beløb">
+            <span>kr</span>
+        </div>
+    </div>
+
+    <div class="donor-info">
+        <h3>Dine oplysninger</h3>
+        <div class="form-group">
+            <label for="donor-email">Email (til kvittering):</label>
+            <input type="email" id="donor-email" placeholder="Din email">
+        </div>
+    </div>
+
+    <button class="donate-btn">Donér nu med MobilePay</button>
+
+    <div class="info-box">
+        <p>Efter du klikker på knappen, genereres et MobilePay-nummer og QR-kode.
+            En kvittering sendes til din email når donationen er gennemført.</p>
+    </div>
+</section>
+<section class="about-donations">
+    <h2>Om donationer</h2>
+    <p>Dine donationer går direkte til vores arbejde med at reducere madspild.
+        Vi sikrer, at alle transaktioner håndteres sikkert og i overensstemmelse med GDPR.</p>
+</section>
+
+<!-- Kontaktformular sektion starter her -->
+<section class="contact-section">
+    <h2>Kontakt Os</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Emne:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send besked</button>
+    </form>
+
+    <div class="form-info">
+        <p>Efter indsendelse modtager du en bekræftelsesmail på den angivne e-mailadresse.</p>
+    </div>
+</section>
+
+<!-- Infoboks med alternative kontaktoplysninger -->
+<div class="info-box">
+    <h3>Alternative kontaktmuligheder</h3>
+    <ul>
+        <li><strong>Telefon:</strong> +45 60534637</li>
+        <li><strong>E-mail:</strong> Danmarkmod@madspild.dk</li>
+        <li><strong>Adresse:</strong> Guldbergsgade 29N, 2200 København</li>
+    </ul>
+    <p>Telefontid: Mandag-fredag kl. 9-16</p>
+</div>
 </body>
 </html>
-
-
 <!-- http://localhost:8080/privat/bliv-aktiv -->
