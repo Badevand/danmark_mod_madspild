@@ -1,18 +1,220 @@
 
-
-
-
 /* forside */
+
+
+/* Hele siden*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Det øverste på siden*/
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* styling til hver sektion */
+
+.section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/*footeren i bunden*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/*Baggrunden til menuen*/
+.navbar {
+    background-color: #4CAF55; /* Grøn baggrund */
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Vandret menu: Stilen for menuen, der vises vandret*/
+.nav-menu {
+    list-style: none; /* Fjerner prikker foran punkter */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Lægger menuen vandret */
+    justify-content: center; /* Centrerer menuen */
+}
+
+/* Hver knap/link i menuen */
+.nav-menu > li {
+    position: relative; /* Gør det muligt at placere dropdowns */
+}
+
+/* Design for hvert link i menuen*/
+.nav-menu > li > a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;  /*Fjerner understregning */
+    text-align: center;
+}
+
+.nav-menu > li > a:hover {
+    background-color: #388E3C; /* Mørkere grøn ved hover */
+}
+
+/* Dropdown-menu */
+.dropdown-content {
+    display: none; /* Skjult som standard, vises kun ved hover */
+    position: absolute; /* placere dropdown under knappen*/
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+
+/* Stilen for links i dropdown-menuen*/
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+/*hover-effekt på dropdown links*/
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #4CAF50;
+}
+
+/* Gør dropdownen synlig når man holder musen over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /* slut på forside */
 
 
 /* privat bliv aktiv */
 
+
+
+
 /* slut på privat bliv aktiv */
 
 
 /* privat info */
+
+:root
+{
+    --primary-color:#0b590b;
+    --secondary-color:white;
+
+}
+
+/* Styling af billede øverst */
+
+.privatInfo-første {
+    width: 100%;        /* Gør billedet 100% af containerens bredde */
+    height: 300px;      /* Angiv ønsket højde */
+    object-fit: cover;
+}
+
+
+
+
+/* Styling af det øverste afsnit  */
+
+{
+    background-color: var(--primary-color);
+    color:white;
+    text-align:center;
+    padding:4px; /* Luft indeni boksen */
+    margin-bottom:20px;/* Luft under boksen */
+
+}
+
+
+/* Overskrift i introduktion */
+.madspild-intro h1
+{
+    font-size: 2em; /* Stor skriftstørrelse. er bedre at bruge end px når det kommer til tekst */
+    margin:0; /* Ingen ekstra afstand over eller under */
+
+}
+
+.madspild-intro p
+{
+    font-size:1em; /* Den bruges istedet for px, fordu brugeren kan zoome ind og ud og px er en fast størrelse*/
+    line-height:1.6;  /* Lidt luft mellem hvert råd */
+    margin-top:10px;  /* Luft mellem linjerne */
+}
+-madspild-raad
+{
+    baground-color:white;
+    padding:20px;  /* Luft rundt om teksten */
+    border-radius:8px; /* Bløde, runde hjørner */
+    margin-bottom: 40px;
+
+}
+
+.madspild-raad h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+
+.madspild-raad p
+{
+    font-size:1em;
+    margin-bottom:15px;
+    line-height: 1.6;
+}
+
+.madspild-raad strong
+{
+    font-weight:bold;  /* Fed skrift */
+    color: #0b590b;
+}
+
+.madspild-opskrifter h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.madspold-opskrifter p
+{
+    font-size:1em;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.madspild-opskrifter strong
+{
+    font-weight:bold;
+    color:#0b590b;
+}
+
+.img opskrifter
+{
+    padding:20px;
+}
+
+
 
 /* slut på privat info */
 

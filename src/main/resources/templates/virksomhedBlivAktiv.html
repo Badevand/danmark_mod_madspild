@@ -1,10 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bliv aktiv</title>
+    <link rel ="stylesheet" href="/static/style.css">
 </head>
+
 <body>
 
+<!-- Det øverste på hjemmesiden -->
+<div class="virksomhedAktiv-intro">
+    <h1>Bliv aktiv som virskomhed</h1>
+</div>
+
+<!-- Det øverste på hjemmesiden -->
+<div class="virksomhed-støttemedlem">
+    <h1>Bliv støttemedlem</h1>
+    <p> Som støttemedlem er jeres virksomhed med til aktivt at bekæmpe madspild
+        og gøre en forskel for både miljøet og samfundet. Jeres donation går til at redde overskudsmad
+        og sikre, at den når ud til dem, der har brug for det. Sammen skaber vi en mere bæredygtig fremtid.</p>
+</div>
+
+<button class="tilmeld-knap">Tilmeld</button>
+
+<!-- Det øverste på hjemmesiden -->
+<div class="virksomhed-samarbejdspartner">
+    <h1>Bliv samarbejdspartner</h1>
+    <p>Ved at blive samarbejdspartner er jeres virksomhed med til at skabe en konkret forskel i kampen mod madspild.
+        Gennem fælles initiativer og skræddersyede løsninger kan vi sammen redde overskudsmad og styrke bæredygtigheden.
+        Vi tror på, at de bedste resultater opstår gennem stærke partnerskaber
+        – og vi vil gerne have jer med på rejsen.</p>
+</div>
+
+<button class="tilmeld-knap">Tilmeld</button>
+
+
+
+<div class="mobilepay-intro">
+    <h2>Donation via MobilePay</h2>
+    <p>Som privatperson kan du støtte vores arbejde med at bekæmpe madspild gennem en donation.</p>
+</div>
+
+<div class="donation-options">
+    <h3>Vælg beløb</h3>
+    <div class="amount-buttons">
+        <button class="amount-btn">50 kr</button>
+        <button class="amount-btn">100 kr</button>
+        <button class="amount-btn">200 kr</button>
+        <button class="amount-btn">500 kr</button>
+    </div>
+
+    <div class="custom-amount">
+        <label for="custom-amount">Andet beløb:</label>
+        <input type="number" id="custom-amount" min="10" placeholder="Angiv beløb">
+        <span>kr</span>
+    </div>
+</div>
+
+<div class="donor-info">
+    <h3>Dine oplysninger</h3>
+    <div class="form-group">
+        <label for="donor-email">Email (til kvittering):</label>
+        <input type="email" id="donor-email" placeholder="Din email">
+    </div>
+</div>
+
+<button class="donate-btn">Donér nu med MobilePay</button>
+
+<div class="info-box">
+    <p>Efter du klikker på knappen, genereres et MobilePay-nummer og QR-kode.
+        En kvittering sendes til din email når donationen er gennemført.</p>
+</div>
+
+<div class="about-donations">
+    <h2>Om donationer</h2>
+    <p>Dine donationer går direkte til vores arbejde med at reducere madspild.
+        Vi sikrer, at alle transaktioner håndteres sikkert og i overensstemmelse med GDPR.</p>
+</div>
+
+<!-- Kontaktformular sektion starter her -->
+<div class="contact-section">
+    <h2>Kontakt Os</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Emne:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send besked</button>
+    </form>
+
+    <div class="form-info">
+        <p>Efter indsendelse modtager du en bekræftelsesmail på den angivne e-mailadresse.</p>
+    </div>
+</div>
+
+<!-- Infoboks med alternative kontaktoplysninger -->
+<div class="info-box">
+    <h3>Alternative kontaktmuligheder</h3>
+    <ul>
+        <li><strong>Telefon:</strong> +45 60534637</li>
+        <li><strong>E-mail:</strong> Danmarkmod@madspild.dk</li>
+        <li><strong>Adresse:</strong> Guldbergsgade 29N, 2200 København</li>
+    </ul>
+    <p>Telefontid: Mandag-fredag kl. 9-16</p>
+</div>
 </body>
+
+
+
 </html>
