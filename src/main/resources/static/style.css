@@ -114,6 +114,8 @@ footer {
 /* slut på privat bliv aktiv */
 
 
+
+
 /* privat info */
 
 :root
@@ -130,8 +132,6 @@ footer {
     height: 300px;      /* Angiv ønsket højde */
     object-fit: cover;
 }
-
-
 
 
 /* Styling af det øverste afsnit  */
@@ -215,11 +215,38 @@ footer {
 }
 
 
-
 /* slut på privat info */
 
 
 /* virksomhed bliv aktiv */
+
+
+.virksomhedAktiv-første
+{
+    width: 100%;        /* Gør billedet 100% af containerens bredde */
+    height: 300px;      /* Angiv ønsket højde */
+    object-fit: cover;
+
+}
+
+
+.virksomhedAktiv-intro h1
+{
+    font-size: 1.5em;
+    margin:0;
+}
+
+.virskomhedAktiv-intro p
+{
+    font-size:1.6em;
+
+}
+
+
+
+
+
+
 
 /* slut på virksomhed bliv aktiv */
 
