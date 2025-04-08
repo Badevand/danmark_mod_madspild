@@ -1,0 +1,102 @@
+:root
+{
+    --primary-color:#0b590b;
+    --secondary-color:white;
+
+}
+
+/* Styling af det øverste afsnit  */
+
+{
+    background-color: var(--primary-color);
+    color:white;
+    text-align:center;
+    padding:4px; /* Luft indeni boksen */
+    margin-bottom:20px;/* Luft under boksen */
+
+}
+
+
+/* Overskrift i introduktion */
+.madspild-intro h1
+{
+    font-size: 2em; /* Stor skriftstørrelse. er bedre at bruge end px når det kommer til tekst */
+    margin:0; /* Ingen ekstra afstand over eller under */
+
+}
+
+.madspild-intro p
+{
+    font-size:1em; /* Den bruges istedet for px, fordu brugeren kan zoome ind og ud og px er en fast størrelse*/
+    line-height:1.6;  /* Lidt luft mellem hvert råd */
+    margin-top:10px;  /* Luft mellem linjerne */
+}
+-madspild-raad
+{
+    baground-color:white;
+    padding:20px;  /* Luft rundt om teksten */
+    border-radius:8px; /* Bløde, runde hjørner */
+    margin-bottom: 40px;
+
+}
+
+.madspild-raad h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+
+.madspild-raad p
+{
+    font-size:1em;
+    margin-bottom:15px;
+    line-height: 1.6;
+}
+
+.madspild-raad strong
+{
+    font-weight:bold;  /* Fed skrift */
+    color: #0b590b;
+}
+
+.madspild-opskrifter h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.madspold-opskrifter p
+{
+    font-size:1em;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.madspild-opskrifter strong
+{
+    font-weight:bold;
+    color:#0b590b;
+}
+
+.img opskrifter
+{
+    padding:20px;
+}
+
+.menu
+{
+    background-color:var(--primary-color)
+}
+
+.menu .navbar
+{
+    display:flex;
+    padding:20px;
+}
+
+.nav-link
+{
+    color:var(--secondary-color)
+}
