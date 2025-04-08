@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" th:href="@{/forside.css}">
+    <link rel="stylesheet" href="@{/style.css}">
     <meta charset="UTF-8">
     <title>Bliv Aktiv</title>
 </head>
-<body>
+<body class="privat-bliv-aktiv">
+
 <header>
     <h1>Bliv Aktiv som Privatperson</h1>
 </header>
+
+
+<!-- bliv frivillig -->
 <section>
     <h2>Bliv Frivillig</h2>
-    <p>Vil du være med til at reducere madspild? Tilmeld dig som frivillig og gør en forskel</p>
+    <p><strong>Vil du være med til at reducere madspild?</strong><br>
+        Tilmeld dig som frivillig og gør en forskel!<br>
+        Som frivillig hos Danmark mod Madspild bliver du en del af et engageret fællesskab, der arbejder for at mindske madspild i hele landet.<br>
+        Du kan hjælpe med alt fra oplysningskampagner og events til madindsamling og distribution.<br>
+        Uanset hvor meget tid du har, er der brug for dig – sammen skaber vi en grønnere fremtid.</p>
     <button>Tilmeld dig</button>
 </section>
+
+
+<!-- bliv sponsor -->
 <section>
     <h2>Bliv Sponsor</h2>
     <p>Du kan også støtte vores initiativer økonomisk.</p>
     <button>Kontakt os</button>
 </section>
-<!-- Donation via MobilePay sektion starter her -->
+
+
+<!-- donation via MobilePay -->
 <section>
     <h2>Donation via MobilePay</h2>
     <p>Som privatperson kan du støtte vores arbejde med at bekæmpe madspild gennem en donation.</p>
@@ -55,13 +68,17 @@
             En kvittering sendes til din email når donationen er gennemført.</p>
     </div>
 </section>
+
+
+<!-- om donationer -->
 <section class="about-donations">
     <h2>Om donationer</h2>
     <p>Dine donationer går direkte til vores arbejde med at reducere madspild.
         Vi sikrer, at alle transaktioner håndteres sikkert og i overensstemmelse med GDPR.</p>
 </section>
 
-<!-- Kontaktformular sektion starter her -->
+
+<!-- kontakt os -->
 <section class="contact-section">
     <h2>Kontakt Os</h2>
     <form class="contact-form">
@@ -93,7 +110,8 @@
     </div>
 </section>
 
-<!-- Infoboks med alternative kontaktoplysninger -->
+
+<!-- alternative kontaktmuligheder -->
 <div class="info-box">
     <h3>Alternative kontaktmuligheder</h3>
     <ul>
@@ -103,6 +121,7 @@
     </ul>
     <p>Telefontid: Mandag-fredag kl. 9-16</p>
 </div>
+
+
 </body>
 </html>
-<!-- http://localhost:8080/privat/bliv-aktiv -->
