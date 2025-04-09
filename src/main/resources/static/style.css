@@ -1,10 +1,10 @@
-/* Hele siden*/
+/* Hele siden */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;  /* Sætter skrifttypen til Arial eller sans-serif som backup */
+    background-color: #f8f8f8;  /* Lysegrå baggrundsfarve til hele siden */
+    color: #333;  /* Mørkegrå tekstfarve */
+    margin: 0;  /* Fjerner standardmargin på body */
+    padding: 0;  /* Fjerner standardpadding på body */
 }
 
 
@@ -12,264 +12,293 @@ body {
 
 /* Baggrund til menuen */
 .navbar {
-    background-color: #4CAF50;
-    padding: 10px 0;
+    background-color: #4CAF50;  /* Grøn baggrundsfarve til navigationsmenuen */
+    padding: 10px 0;  /* 10px padding top og bund, 0 på siderne */
     margin-bottom: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Let skyggeeffekt under menuen */
 }
 
-/* Navigation menu styling */
+/* vandret menu: stilen for menuen, der vises vandret*/
 .nav-menu {
-    list-style: none;
+    list-style: none;  /* Fjerner punkttegn fra listen */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: flex;  /* Bruger flexbox til layout */
+    justify-content: center;  /* Centrerer menupunkterne vandret */
 }
-
+/* hver kanp link i menu*/
 .nav-menu > li {
-    position: relative;
+    position: relative;  /* gør det muligt at placerer dropdowns */
 }
-
+/* design for hvert link i menuen*/
 .nav-menu > li > a {
-    display: block;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+    display: block;  /* Gør links til blok-elementer så hele området er klikbart */
+    color: white;  /* Hvid tekstfarve */
+    padding: 14px 20px;  /* Padding omkring teksten */
+    text-decoration: none;  /* Fjerner understregning på links */
+    text-align: center;  /* Centrerer teksten */
 }
 
 .nav-menu > li > a:hover {
-    background-color: #388E3C;
+    background-color: #388E3C;  /* Mørkere grøn baggrundsfarve ved hover */
 }
 
 /* Dropdown menu */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    border-radius: 6px;
-    z-index: 100;
+    display: none;  /* Skjuler dropdown-indholdet som standard */
+    position: absolute;  /* Absolut positionering i forhold til parent */
+    background-color: #f9f9f9;  /* Lysegrå baggrundsfarve */
+    min-width: 180px;  /* Minimum bredde på dropdown */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);  /* Skyggeeffekt på dropdown */
+    border-radius: 6px;  /* Afrundede hjørner */
+    z-index: 100;  /* Sikrer at dropdown vises over andre elementer */
 }
 
 .dropdown-content li {
-    list-style: none;
+    list-style: none;  /* Fjerner punkttegn fra listen */
 }
-
+/* stien for links i dropdown menuen */
 .dropdown-content li a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    color: #333;  /* Mørkegrå tekstfarve */
+    padding: 12px 16px;  /* Padding omkring teksten */
+    text-decoration: none;  /* Fjerner understregning på links */
+    display: block;  /* Gør links til blok-elementer */
+    text-align: left;  /* Venstrejusterer teksten */
 }
 
 .dropdown-content li a:hover {
-    background-color: #f1f1f1;
-    color: #4CAF50;
+    background-color: #f1f1f1;  /* Lysere grå baggrundsfarve ved hover */
+    color: #4CAF50;  /* Grøn tekstfarve ved hover */
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block;  /* Viser dropdown ved hover over parent element */
 }
 
 /* Menu slut */
 
 
 /* Billede styling til forsiden*/
-.forside-billede
-{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.forside-billede {
+    width: 100%;  /* Fylder hele bredden af container */
+    height: 300px;  /* Fast højde på 300px */
+    object-fit: cover;  /* Bevarer billedets proportioner og dækker området */
 }
 
+.fs {
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 12px;  /* Afrundede hjørner */
+    padding: 30px;  /* Padding i alle retninger */
+    margin-bottom: 30px;  /* Margin i bunden */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);  /* Let skyggeeffekt */
+}
 
+.forside-header {
+    background-color: #4CAF50;  /* Grøn baggrundsfarve */
+    color: white;  /* Hvid tekstfarve */
+    text-align: center;  /* Centrerer teksten */
+    padding: 10px 10px;  /* Padding top/bund og højre/venstre */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Let skyggeeffekt i bunden */
+}
 
 /* forside slut */
 
+/* om os start */
 
-
-
-/* Intro styling til privatinfo og virksomhedaktiv */
-.privatInfo-intro, .virksomhedAktiv-intro {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
+/* Intro styling til det øverste på privatinfo hjemmeisden og virksomhedaktiv. om os intro og privat aktiv intro  */
+.madspild-intro, .virksomhedAktiv-intro, .omos-intro, .privatAktiv-intro {
+    text-align: center;  /* Centrerer teksten */
+    padding: 20px;  /* Padding i alle retninger */
+    margin-bottom: 30px;  /* Margin i bunden */
 }
 
+
 .privatInfo-intro h1, .virksomhedAktiv-intro h1 {
-    font-size: 1.8em;
-    margin: 0 0 15px 0;
-    color: #333;
+    font-size: 1.8em;  /* Skriftstørrelse */
+    margin: 0 0 15px 0;  /* Margin: top højre bund venstre */
+    color: #333;  /* Mørkegrå tekstfarve */
 }
 
 .privatInfo-intro p, .virksomhedAktiv-intro p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1.1em;  /* Skriftstørrelse */
+    line-height: 1.6;  /* Linjehøjde for bedre læsbarhed */
+    max-width: 800px;  /* Maksimal bredde på teksten */
+    margin: 0 auto;  /* Centrerer teksten horisontalt */
 }
 
+/* boks til madspild råd*/
+.madspild-raad {
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 8px;  /* Afrundede hjørner */
+    padding: 25px;  /* Padding i alle retninger */
+    margin: 0 20px 30px 20px;  /* Margin: top højre bund venstre */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
+}
+
+/* centrere tekst*/
+.madspild-opskrifter h1 {
+    text-align: center;  /* Centrerer teksten */
+    padding: 20px;  /* Padding i alle retninger */
+    margin-bottom: 30px;  /* Margin i bunden */
+}
+
+/* Boks til hver opskrift*/
+.opskrift {
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 8px;  /* Afrundede hjørner */
+    padding: 25px;  /* Padding i alle retninger */
+    margin: 0 20px 30px 20px;  /* Margin: top højre bund venstre */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
+}
 
 /* Billede styling til 5 opskrifter*/
-    .opskrift img {
-        width: 40%;   /* Gør billedet mindre - juster procent efter behov */
-        height: auto; /* Bevarer proportionerne */
-        display: block;
-        margin: 0 auto; /* Centrerer billedet horisontalt */
-    }
+.opskrift img {
+    width: 40%;  /* Gør billedet mindre - juster procent efter behov */
+    height: auto;  /* Bevarer proportionerne */
+    display: block;  /* Gør billedet til et blok-element */
+    margin: 0 auto;  /* Centrerer billedet horisontalt */
+}
 
 
 /* Section styling */
 section, .virksomhed-støttemedlem, .virksomhed-samarbejdspartner {
-    background-color: white;
-    border-radius: 8px;
-    padding: 25px;
-    margin: 0 20px 30px 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 8px;  /* Afrundede hjørner */
+    padding: 25px;  /* Padding i alle retninger */
+    margin: 0 20px 30px 20px;  /* Margin: top højre bund venstre */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
 }
 
 section h2, .virksomhed-støttemedlem h1, .virksomhed-samarbejdspartner h1 {
-    color: #4CAF50;
-    margin-top: 0;
-    font-size: 1.5em;
+    color: #4CAF50;  /* Grøn tekstfarve */
+    margin-top: 0;  /* Ingen margin i toppen */
+    font-size: 1.5em;  /* Skriftstørrelse */
 }
-/* Button styling tilmeld knap */
-
-/* Button styling tilmeld knap */
-
 
 /* Button styling tilmeld knap */
 button, .tilmeld-knap, .submit-btn, .donate-btn, .amount-btn, .mobilepay-link {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 10px 0;
-    transition: background-color 0.3s;
+    background-color: #4CAF50;  /* Grøn baggrundsfarve */
+    color: white;  /* Hvid tekstfarve */
+    border: none;  /* Ingen kant */
+    padding: 10px 20px;  /* Padding: top/bund højre/venstre */
+    border-radius: 5px;  /* Afrundede hjørner */
+    cursor: pointer;  /* Viser håndmarkør ved hover */
+    font-size: 1em;  /* Skriftstørrelse */
+    margin: 10px 0;  /* Margin top/bund */
+    transition: background-color 0.3s;  /* Glidende overgang ved farveændring */
 }
 
 button:hover, .tilmeld-knap:hover, .submit-btn:hover, .donate-btn:hover, .amount-btn:hover, .mobilepay-link:hover {
-    background-color: #388E3C;
+    background-color: #388E3C;  /* Mørkere grøn baggrundsfarve ved hover */
 }
-
-
-
-
 
 /* Donation page styling */
 .donation-page {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8;  /* Lysegrå baggrundsfarve */
 }
 
 .donation-container {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;  /* Maksimal bredde */
+    margin: 30px auto;  /* 30px margin top/bund, auto på siderne for at centrere */
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 8px;  /* Afrundede hjørner */
+    padding: 30px;  /* Padding i alle retninger */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
 }
 
 .donation-container h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
+    color: #333;  /* Mørkegrå tekstfarve */
+    text-align: center;  /* Centrerer teksten */
+    margin-bottom: 30px;  /* Margin i bunden */
 }
 
 .donation-info {
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: center;  /* Centrerer teksten */
+    margin-bottom: 30px;  /* Margin i bunden */
 }
 
 .amount-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
+    display: flex;  /* Bruger flexbox til layout */
+    flex-wrap: wrap;  /* Tillader ombrydning ved små skærmstørrelser */
+    gap: 10px;  /* Mellemrum mellem knapperne */
+    justify-content: center;  /* Centrerer knapperne vandret */
+    margin: 20px 0;  /* Margin top/bund */
 }
 
 .custom-amount {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
+    display: flex;  /* Bruger flexbox til layout */
+    align-items: center;  /* Centrerer elementer vertikalt */
+    gap: 10px;  /* Mellemrum mellem elementer */
+    margin: 15px 0;  /* Margin top/bund */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px;  /* Margin i bunden */
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    display: block;  /* Gør labels til blok-elementer */
+    margin-bottom: 5px;  /* Margin i bunden */
+    font-weight: bold;  /* Fed skrift */
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 100%;  /* Fylder hele bredden af container */
+    padding: 8px;  /* Padding i alle retninger */
+    border: 1px solid #ddd;  /* Lysegrå kant */
+    border-radius: 4px;  /* Afrundede hjørner */
 }
 
 /* QR code styling */
 .mobilepay-qr {
-    text-align: center;
-    margin: 30px 0;
+    text-align: center;  /* Centrerer teksten */
+    margin: 30px 0;  /* Margin top/bund */
 }
 
 .qr-code {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 20px;
-    display: block;
-    border: 1px solid #ddd;
+    width: 200px;  /* Fast bredde */
+    height: 200px;  /* Fast højde */
+    margin: 0 auto 20px;  /* 0 margin top, auto på siderne for at centrere, 20px i bunden */
+    display: block;  /* Gør til blok-element */
+    border: 1px solid #ddd;  /* Lysegrå kant */
 }
 
 /* Info box styling */
 .info-box {
-    background-color: #f9f9f9;
-    border-left: 4px solid #4CAF50;
-    padding: 15px;
-    border-radius: 0 4px 4px 0;
-    margin: 20px 0;
+    background-color: #f9f9f9;  /* Lysegrå baggrundsfarve */
+    border-left: 4px solid #4CAF50;  /* Grøn venstre kant */
+    padding: 15px;  /* Padding i alle retninger */
+    border-radius: 0 4px 4px 0;  /* Afrundede hjørner: top-højre bund-højre bund-venstre top-venstre */
+    margin: 20px 0;  /* Margin top/bund */
 }
 
 .info-box h3 {
-    margin-top: 0;
-    color: #4CAF50;
+    margin-top: 0;  /* Ingen margin i toppen */
+    color: #4CAF50;  /* Grøn tekstfarve */
 }
 
 .back-link {
-    text-align: center;
-    margin-top: 30px;
+    text-align: center;  /* Centrerer teksten */
+    margin-top: 30px;  /* Margin i toppen */
 }
 
 .back-link a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
+    color: #4CAF50;  /* Grøn tekstfarve */
+    text-decoration: none;  /* Fjerner understregning på links */
+    font-weight: bold;  /* Fed skrift */
 }
 
 .back-link a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Tilføjer understregning ved hover */
 }
 
 /* Contact form styling */
 .contact-section {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;  /* Maksimal bredde */
+    margin: 30px auto;  /* 30px margin top/bund, auto på siderne for at centrere */
+    background-color: white;  /* Hvid baggrundsfarve */
+    border-radius: 8px;  /* Afrundede hjørner */
+    padding: 25px;  /* Padding i alle retninger */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
 }
