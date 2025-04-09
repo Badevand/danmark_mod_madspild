@@ -302,3 +302,14 @@ button:hover, .tilmeld-knap:hover, .submit-btn:hover, .donate-btn:hover, .amount
     padding: 25px;  /* Padding i alle retninger */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Let skyggeeffekt */
 }
+
+/* virksomhed info */
+.madspild-raad img
+{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+

@@ -9,7 +9,7 @@ public class homeController
     @GetMapping("/forside")
     public String forside()
     {
-        return "home/forside";
+        return "forside";
     }
 
     @GetMapping("/om-os")

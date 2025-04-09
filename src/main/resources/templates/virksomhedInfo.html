@@ -1,8 +1,106 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="da">
+
 <head>
-    <link rel="stylesheet" href="@{/style.css}">
-    <link rel="stylesheet" href="/static/style.css">
     <meta charset="UTF-8">
-    <title>Virksomhed - Bidrag mod Madspild</title>
+    <title>Tips til virksomheder</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
+<body>
+<div class="menu">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Privat</a>
+                <ul class="dropdown-content">
+                    <li><a href="privatInfo.html">Tips til hjemmet</a></li>
+                    <li><a href="privatBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Virksomhed</a>
+                <ul class="dropdown-content">
+                    <li><a href="virksomhedInfo.html">Tips</a></li>
+                    <li><a href="virksomhedBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- intro -->
+<div class="madspild-intro">
+    <h1>Hvordan virksomheder kan bidrage til mindre madspild</h1>
+    <p>
+        Virksomheder spiller en vigtig rolle i kampen mod madspild. Ved at deltage aktivt i initiativer og samarbejde, kan man både opnå økonomiske fordele og styrke sin virksomheds omdømme.
+    </p>
+</div>
+
+<!-- virksomhedsinformation -->
+<div class="madspild-raad">
+    <h2>Økonomisk gevinst og samarbejde</h2>
+    <div class="madspild-billede-tekst">
+        <img src="/static/images/donation.jpg" alt="Donation af overskudsmad">
+        <p>
+            Udvikling og implementering af løsninger til madspild kræver investeringer, men mange virksomheder har allerede de økonomiske ressourcer til dette. Investeringen betaler sig tilbage gennem synlighed, anerkendelse og potentielle besparelser.
+        </p>
+        <p>
+            Eksempelvis kan supermarkeder som Netto reducere spild ved at sælge overskudsmad – fx fra bageriafdelingen – til nedsat pris i stedet for at kassere det. Dette skaber både værdi for virksomheden og for samfundet.
+        </p>
+    </div>
+
+    <h2>Events og fællesspisning</h2>
+    <div class="madspild-billede-tekst">
+        <img src="/static/images/fællesspisning.jpg" alt="Fællesspisning event">
+        <p>
+            Danmark mod Madspild arrangerer madspildsrelaterede events med hjælp fra sponsorer som supermarkeder og fødevareproducenter. Disse events kombinerer bæredygtighed med sociale aktiviteter og fællesskab.
+        </p>
+        <p>
+            Et typisk event kan inkludere fællesspisning, hvor frivillige tilbereder mad doneret af virksomheder. Arrangementerne kan finde sted i parker, torve eller lånte lokaler – og bliver en hyggelig og meningsfuld oplevelse for familier og lokalsamfund.
+        </p>
+    </div>
+
+    <h2>Aktiviteter og underholdning</h2>
+    <div class="madspild-billede-tekst">
+        <img src="/static/images/madquiz.jpg" alt="Aktiviteter til madspildsarrangement">
+        <p>
+            For at engagere deltagerne tilbyder vi sjove og lærerige aktiviteter såsom:
+        </p>
+        <ul>
+            <li>Lykkehjul med madspilds-relaterede præmier</li>
+            <li>Boldspil med fødevaretema – fx kast med “grimme” grøntsager</li>
+            <li>Gættekonkurrencer – fx “gæt vægten af denne madsspildsmængde”</li>
+            <li>Madquizzer med præmier</li>
+        </ul>
+    </div>
+
+    <h2>Fordele for virksomheder</h2>
+    <div class="madspild-billede-tekst">
+        <img src="/static/images/event.jpg" alt="Madspild event med sponsorater">
+        <p>
+            Som sponsor kan din virksomhed få synlighed og goodwill ved at støtte vores initiativer. Det kan ske ved at donere varer, sponsorere events eller stille lokaler til rådighed.
+        </p>
+        <p>
+            Event-konceptet skaber opmærksomhed omkring madspild og giver samtidig sponsorer positiv eksponering. Det fremmer fællesskab og sociale oplevelser, samtidig med at det genererer midler til at fortsætte kampen mod madspild.
+        </p>
+    </div>
+</div>
+
+<!-- kontakt -->
+<div class="info-box">
+    <h3>Kontakt os for samarbejde</h3>
+    <ul>
+        <li><strong>Telefon:</strong> +45 60534637</li>
+        <li><strong>E-mail:</strong> Danmarkmod@madspild.dk</li>
+        <li><strong>Adresse:</strong> Guldbergsgade 29N, 2200 København</li>
+    </ul>
+    <p>Telefontid: Mandag-fredag kl. 9-16</p>
+</div>
+
+</body>
+</html>
