@@ -93,7 +93,7 @@ body {
 
 
 
-/* Intro styling */
+/* Intro styling til privatinfo og virksomhedaktiv */
 .privatInfo-intro, .virksomhedAktiv-intro {
     text-align: center;
     padding: 20px;
@@ -114,8 +114,13 @@ body {
 }
 
 
-
-
+/* Billede styling til 5 opskrifter*/
+    .opskrift img {
+        width: 40%;   /* Gør billedet mindre - juster procent efter behov */
+        height: auto; /* Bevarer proportionerne */
+        display: block;
+        margin: 0 auto; /* Centrerer billedet horisontalt */
+    }
 
 
 /* Section styling */
