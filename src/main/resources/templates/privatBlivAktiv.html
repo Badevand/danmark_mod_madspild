@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="@{/style.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="/static/style.css">
     <meta charset="UTF-8">
     <title>Bliv Aktiv</title>
 </head>
 <body class="privat-bliv-aktiv">
 
-<header>
+<!-- Menu på hjemmesiden - inkluder samme menu som på virksomhed-siden -->
+<div class="menu">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+
+            <!-- Privat med dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Privat</a>
+                <ul class="dropdown-content">
+                    <li><a href="privatInfo.html">Tips til hjemmet</a></li>
+                    <li><a href="privatBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+
+            <!-- Virksomhed med dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Virksomhed</a>
+                <ul class="dropdown-content">
+                    <li><a href="virksomhedInfo.html">Tips</a></li>
+                    <li><a href="virksomhedBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Øverste billede på hjemmesiden -->
+<div class="image-privatFørste">
+    <img class="privatAktiv-første" src="/static/images/madspild-privat.jpg" alt="Madspild privat">
+</div>
+
+<!-- Overskriften på hjemmesiden -->
+<div class="privatAktiv-intro">
     <h1>Bliv Aktiv som Privatperson</h1>
-</header>
+    <p>Som privatperson kan du gøre en stor forskel i kampen mod madspild.
+        Vær med til at skabe en mere bæredygtig fremtid – både for mennesker og miljø.</p>
+</div>
 
-
-<!-- bliv frivillig -->
+<!-- Bliv frivillig sektion -->
 <section>
     <h2>Bliv Frivillig</h2>
     <p><strong>Vil du være med til at reducere madspild?</strong><br>
@@ -23,62 +59,31 @@
     <button>Tilmeld dig</button>
 </section>
 
-
-<!-- bliv sponsor -->
+<!-- Bliv sponsor sektion -->
 <section>
-    <h2>Bliv Sponsor</h2>
-    <p>Du kan også støtte vores initiativer økonomisk.</p>
-    <button>Kontakt os</button>
+    <h2>Bliv Støttemedlem</h2>
+    <p>Som støttemedlem er du med til aktivt at bekæmpe madspild og gøre en forskel for både miljøet og samfundet.
+        Dit bidrag går til at redde overskudsmad og sikre, at den når ud til dem, der har brug for det.
+        Sammen skaber vi en mere bæredygtig fremtid.</p>
+    <button>Bliv medlem</button>
 </section>
 
-
-<!-- donation via MobilePay -->
+<!-- Donation sektion - forenklet version med link i stedet for komplet formular -->
 <section>
-    <h2>Donation via MobilePay</h2>
-    <p>Som privatperson kan du støtte vores arbejde med at bekæmpe madspild gennem en donation.</p>
+    <h2>Støt med en Donation</h2>
+    <p>Du kan støtte vores arbejde med at bekæmpe madspild gennem en donation via MobilePay.
+        Alle bidrag, store som små, gør en forskel i vores kamp mod madspild.
+        Din donation går direkte til vores aktiviteter og projekter.</p>
 
-    <div class="donation-options">
-        <h3>Vælg beløb</h3>
-        <div class="amount-buttons">
-            <button class="amount-btn">50 kr</button>
-            <button class="amount-btn">100 kr</button>
-            <button class="amount-btn">200 kr</button>
-            <button class="amount-btn">500 kr</button>
-        </div>
-
-        <div class="custom-amount">
-            <label for="custom-amount">Andet beløb:</label>
-            <input type="number" id="custom-amount" min="10" placeholder="Angiv beløb">
-            <span>kr</span>
-        </div>
-    </div>
-
-    <div class="donor-info">
-        <h3>Dine oplysninger</h3>
-        <div class="form-group">
-            <label for="donor-email">Email (til kvittering):</label>
-            <input type="email" id="donor-email" placeholder="Din email">
-        </div>
-    </div>
-
-    <button class="donate-btn">Donér nu med MobilePay</button>
+    <a href="MobilPayDonation.html" class="mobilepay-link">Donér via MobilePay</a>
 
     <div class="info-box">
-        <p>Efter du klikker på knappen, genereres et MobilePay-nummer og QR-kode.
-            En kvittering sendes til din email når donationen er gennemført.</p>
+        <p>Vi sikrer, at alle donationer håndteres sikkert og i overensstemmelse med GDPR.
+            Du vil modtage en kvittering på mail efter din donation.</p>
     </div>
 </section>
 
-
-<!-- om donationer -->
-<section class="about-donations">
-    <h2>Om donationer</h2>
-    <p>Dine donationer går direkte til vores arbejde med at reducere madspild.
-        Vi sikrer, at alle transaktioner håndteres sikkert og i overensstemmelse med GDPR.</p>
-</section>
-
-
-<!-- kontakt os -->
+<!-- Kontakt os sektion -->
 <section class="contact-section">
     <h2>Kontakt Os</h2>
     <form class="contact-form">
@@ -110,8 +115,7 @@
     </div>
 </section>
 
-
-<!-- alternative kontaktmuligheder -->
+<!-- Alternative kontaktmuligheder -->
 <div class="info-box">
     <h3>Alternative kontaktmuligheder</h3>
     <ul>
@@ -121,7 +125,6 @@
     </ul>
     <p>Telefontid: Mandag-fredag kl. 9-16</p>
 </div>
-
 
 </body>
 </html>
