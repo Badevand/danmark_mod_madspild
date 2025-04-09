@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <title>Om Danmark mod Madspild</title>
+</head>
+<body>
+
+<!-- Menu på hjemmesiden -->
+<div class="menu">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+
+            <!-- Privat med dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Privat</a>
+                <ul class="dropdown-content">
+                    <li><a href="privatInfo.html">Tips til hjemmet</a></li>
+                    <li><a href="privatBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+
+            <!-- Virksomhed med dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Virksomhed</a>
+                <ul class="dropdown-content">
+                    <li><a href="virksomhedInfo.html">Tips</a></li>
+                    <li><a href="virksomhedBlivAktiv.html">Bliv aktiv</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Øverste billede -->
+<div class="image-privatFørste">
+    <img class="privatAktiv-første" src="/static/images/madspild-stor.jpg" alt="Danmark mod Madspild">
+</div>
+
+<!-- Intro sektion -->
+<div class="privatAktiv-intro">
+    <h1>Om Danmark mod Madspild</h1>
+    <p>Vi er en organisation dedikeret til at reducere madspild og skabe en mere bæredygtig fremtid for vores samfund og miljø.</p>
+</div>
+
+<!-- Vores mission sektion -->
+<section>
+    <h2>Vores Mission</h2>
+    <p>Hver dag bliver der kastet næsten 2.000 tons fødevarer ud i Danmark. Vores mission er at mindske dette madspild gennem oplysning, engagement og konkrete initiativer.</p>
+</section>
+
+<!-- Fakta om madspild sektion -->
+<section>
+    <h2>Madspild i tal</h2>
+    <p>
+        • Madspildet i den danske servicesektor udgør 227.000 tons pr. år.<br>
+        • Husholdningernes samlede madspild er 261.000 tons pr. år.<br>
+        • Detailhandelen står for 163.000 tons madspild årligt (72% af servicesektorens madspild).<br>
+        • Specialforretninger som slagtere og grønthandlere bidrager med 12.000 tons pr. år.<br>
+        • Ikke-specialiserede forretninger som supermarkeder står for 151.000 tons pr. år.
+    </p>
+</section>
+
+<!-- Vores værdier sektion -->
+<section>
+    <h2>Vores Værdier</h2>
+    <p>
+        • Bæredygtighed<br>
+        • Oplysning<br>
+        • Fællesskab<br>
+        • Handling<br>
+        • Ansvarlighed
+    </p>
+</section>
+
+<!-- Kontakt sektion -->
+<section class="contact-section">
+    <h2>Vil du vide mere?</h2>
+    <p>Kontakt os for yderligere information om vores arbejde mod madspild.</p>
+    <a href="privatBlivAktiv.html" class="tilmeld-knap">Bliv Aktiv</a>
+</section>
+
+<!-- Alternative kontaktmuligheder -->
+<div class="info-box">
+    <h3>Alternative kontaktmuligheder</h3>
+    <ul>
+        <li><strong>Telefon:</strong> +45 60534637</li>
+        <li><strong>E-mail:</strong> Danmarkmod@madspild.dk</li>
+        <li><strong>Adresse:</strong> Guldbergsgade 29N, 2200 København</li>
+    </ul>
+    <p>Telefontid: Mandag-fredag kl. 9-16</p>
+</div>
+
+</body>
+</html>

@@ -6,11 +6,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class homeController
 {
-
     @GetMapping("/forside")
     public String forside()
     {
         return "home/forside";
+    }
+
+    @GetMapping("/om-os")
+    public String omOs()
+    {
+        return "om-os";
     }
 
     @GetMapping("/privat-bliv-aktiv")
@@ -24,5 +29,4 @@ public class homeController
     {
         return "virksomhedInfo";
     }
-
 }
