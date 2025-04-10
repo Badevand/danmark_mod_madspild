@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class homeController
 {
-    @GetMapping("/forside")
-    public String forside()
+    @GetMapping("/index")
+    public String index()
     {
-        return "forside";
+        return "index";
     }
 
     @GetMapping("/om-os")
